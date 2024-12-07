@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<p>fazer pedido fake natty</p>
+
+<form action="{{ url_for('confirmar_pedido') }}" method="post"> 
+    <label for="ingrediente1">Selecione o 1° igrediente:</label>
+        <select id="" name="recheio">
+            <option value="Zezeronni">Zezeronni</option>
+            <option value="Rararonni">Rararonni</option>
+            <option value="Onni">Onni</option>
+            <option value="maisomi">maisomi</option>
+        </select>
+
+        <label for="ingrediente2">Selecione o 2° igrediente:</label>
+        <select id="" name="molho">
+            <option value="Molho de tomate">Molho de tomate</option>
+            <option value="Molho branco">Molho branco</option>
+            <option value="Molho nubank (blueberry)">Molho nubank (blueberry)</option>
+        </select>
+
+        <label for="ingrediente3">Selecione o 3° igrediente:</label>
+        <select id="" name="massa">
+            <option value="Massa normal">Massa normal</option>
+            <option value="Massa com queijo">Massa com quejo</option>
+            <option value="Massa com carvão ativado">Massa com carvão ativado</option>
+        </select>
+        <button type="submit" href="{{ url_for('confirmar_pedido' )}}">Finalizar Pedido</button>
+
+</form>
+{% endblock %}
