@@ -11,19 +11,31 @@
             <option value="maisomi">maisomi</option>
         </select>
 
-        <label for="ingrediente2">Selecione o 2° igrediente:</label>
+        <label for="ingrediente2"><br>Selecione o 2° igrediente:</label>
         <select id="" name="molho">
             <option value="Molho de tomate">Molho de tomate</option>
             <option value="Molho branco">Molho branco</option>
             <option value="Molho nubank (blueberry)">Molho nubank (blueberry)</option>
         </select>
 
-        <label for="ingrediente3">Selecione o 3° igrediente:</label>
+        <label for="ingrediente3"><br>Selecione o 3° igrediente:</label>
         <select id="" name="massa">
             <option value="Massa normal">Massa normal</option>
             <option value="Massa com queijo">Massa com quejo</option>
             <option value="Massa com carvão ativado">Massa com carvão ativado</option>
         </select>
+        
+        <label for="ingrediente4"><br>Selecione o 4° igrediente:</label>
+        <select id="" name="borda">
+            <option value="Massa normal">Borda de Catupiry</option>
+            <option value="Massa com queijo">Borda de Cheddar</option>
+            <option value="Massa com carvão ativado">Sem borda</option>
+        </select> 
+
+        <label for="endereco"><br>Informe o seu endereço: </label>
+            <input type="text" name="endereco">
+        
+        <br>
         <button type="submit" href="{{ url_for('confirmar_pedido' )}}">Finalizar Pedido</button>
 
 </form>

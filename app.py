@@ -15,4 +15,6 @@ def confirmar_pedido():
     recheio = request.form.get('recheio')
     molho = request.form.get('molho')
     massa = request.form.get('massa')
-    return render_template('confirmar_pedido.html', recheio = recheio, molho = molho, massa = massa)
+    borda = request.form.get('borda')
+    endereco = request.form.get('endereco')
+    return render_template('confirmar_pedido.html', recheio = recheio, molho = molho, massa = massa, borda = borda, endereco = endereco)

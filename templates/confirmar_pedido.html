@@ -1,9 +1,13 @@
 {% extends "base.html" %}
 {% block conteudo %}
 <p>
-    Pedido feito
-    Massa: {{massa}}
-    Molho: {{molho}}
-    Recheio: {{recheio}}
+    Pedido feito, sua pizza: <br>
+    Massa: {{massa}} <br>
+    Molho: {{molho}} <br>
+    Recheio: {{recheio}} <br>
+    Borda: {{borda}} <br>
+    Será entregue no endereço: {{endereco}} em aproximadamente 40 minutos! <br>
+
+    Obrigado pela preferência :D
 </p>
 {% endblock %}
